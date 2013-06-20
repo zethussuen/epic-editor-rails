@@ -313,9 +313,9 @@
         , defaultContent: ''
           , autoSave: 100 // Set to false for no auto saving
           }
-        , theme: { base: '/themes/base/epiceditor.css'
-          , preview: '/themes/preview/github.css'
-          , editor: '/themes/editor/epic-dark.css'
+        , theme: { base: '<%= asset_path("base/epiceditor.css") %>'
+          , preview: '<%= asset_path("preview/github.css") %>'
+          , editor: '<%= asset_path("editor/epic-light.css") %>'
           }
         , focusOnLoad: false
         , shortcut: { modifier: 18 // alt keycode
@@ -468,9 +468,9 @@
                   '<iframe frameborder="0" id="epiceditor-editor-frame"></iframe>' +
                   '<iframe frameborder="0" id="epiceditor-previewer-frame"></iframe>' +
                   '<div id="epiceditor-utilbar">' +
-                    '<img width="30" src="' + this.settings.basePath + '/images/preview.png" title="Toggle Preview Mode" class="epiceditor-toggle-btn epiceditor-toggle-preview-btn"> ' +
-                    '<img width="30" src="' + this.settings.basePath + '/images/edit.png" title="Toggle Edit Mode" class="epiceditor-toggle-btn epiceditor-toggle-edit-btn"> ' +
-                    '<img width="30" src="' + this.settings.basePath + '/images/fullscreen.png" title="Enter Fullscreen" class="epiceditor-fullscreen-btn">' +
+                    '<img width="30" src="<%= asset_path("preview.png") %>" title="Toggle Preview Mode" class="epiceditor-toggle-btn epiceditor-toggle-preview-btn"> ' +
+                    '<img width="30" src="<%= asset_path("edit.png") %>" title="Toggle Edit Mode" class="epiceditor-toggle-btn epiceditor-toggle-edit-btn"> ' +
+                    '<img width="30" src="<%= asset_path("fullscreen.png") %>" title="Enter Fullscreen" class="epiceditor-fullscreen-btn">' +
                   '</div>' +
                 '</div>'
     
@@ -524,13 +524,13 @@
     self.reflow();
 
     // Insert Base Stylesheet
-    _insertCSSLink(self.settings.basePath + self.settings.theme.base, self.iframe, 'theme');
+    _insertCSSLink(self.settings.theme.base, self.iframe, 'theme');
     
     // Insert Editor Stylesheet
-    _insertCSSLink(self.settings.basePath + self.settings.theme.editor, self.editorIframeDocument, 'theme');
+    _insertCSSLink(self.settings.theme.editor, self.editorIframeDocument, 'theme');
     
     // Insert Previewer Stylesheet
-    _insertCSSLink(self.settings.basePath + self.settings.theme.preview, self.previewerIframeDocument, 'theme');
+    _insertCSSLink(self.settings.theme.preview, self.previewerIframeDocument, 'theme');
 
     // Add a relative style to the overall wrapper to keep CSS relative to the editor
     self.iframe.getElementById('epiceditor-wrapper').style.position = 'relative';
