@@ -18,5 +18,5 @@ application.css.(scss):
 @import 'editor/epic-light';  
 ```
 
-EpicEditor v0.2.0  
+EpicEditor v0.2.2  
 http://epiceditor.com/  
