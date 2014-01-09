@@ -1,4 +1,4 @@
-epic-editor-rails v0.1.1
+epic-editor-rails v0.2.2
 =================
 Gemfile: ```gem 'epic-editor-rails'```  
 Install: ```$ bundle install  ```
