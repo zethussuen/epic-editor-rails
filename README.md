@@ -1,4 +1,4 @@
-epic-editor-rails v0.2.3
+epic-editor-rails v0.2.4
 =================
 Gemfile: ```gem 'epic-editor-rails'```  
 Install: ```$ bundle install  ```
@@ -18,7 +18,7 @@ application.css.(scss):
 @import 'editor/epic-light';  
 ```
 
-EpicEditor v0.2.2  
+EpicEditor v0.2.3  
 http://epiceditor.com/  
 
 
