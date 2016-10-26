@@ -8,14 +8,16 @@ application.js:
 //= require 'epiceditor'  
 ```
 
-application.css.(scss):
-```
-@import 'base/epiceditor';  
-@import 'preview/bartik';  
-@import 'preview/github';  
-@import 'preview/preview-dark';  
-@import 'editor/epic-dark';  
-@import 'editor/epic-light';  
+All instructions and patterns from the upstream's README ([EpicEditor](https://github.com/OscarGodson/EpicEditor)) can be applied directly.
+
+With the exception of specifying themes, which can be accomplished along the lines of:
+```erb
+new EpicEditor({
+  theme: {
+    editor: '<%= asset_path 'editor/epic-light.css' %>',
+    preview: '<%= asset_path 'preview/preview-dark.css' %>'
+  }
+}).load();
 ```
 
 EpicEditor v0.2.3  
