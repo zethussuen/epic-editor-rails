@@ -8,7 +8,9 @@ application.js:
 //= require 'epiceditor'  
 ```
 
-specifying themes (eg, in a `.js.erb` file, or in a `<script>` tag):
+All instructions and patterns from the upstream's README ([EpicEditor](https://github.com/OscarGodson/EpicEditor)) can be applied directly.
+
+With the exception of specifying themes, which can be accomplished along the lines of:
 ```erb
 new EpicEditor({
   theme: {
@@ -17,8 +19,6 @@ new EpicEditor({
   }
 }).load();
 ```
-
-otherwise, follow all instructions and patterns from the upstream [EpicEditor](https://github.com/OscarGodson/EpicEditor) README
 
 EpicEditor v0.2.3  
 http://epiceditor.com/  
