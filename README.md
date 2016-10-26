@@ -8,7 +8,7 @@ application.js:
 //= require 'epiceditor'  
 ```
 
-specifying themes:
+specifying themes (eg, in a `.js.erb` file, or in a `<script>` tag):
 ```erb
 new EpicEditor({
   theme: {
@@ -17,6 +17,8 @@ new EpicEditor({
   }
 }).load();
 ```
+
+otherwise, follow all instructions and patterns from the upstream [EpicEditor](https://github.com/OscarGodson/EpicEditor) README
 
 EpicEditor v0.2.3  
 http://epiceditor.com/  
