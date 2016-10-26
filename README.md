@@ -1,3 +1,5 @@
+### Note: This gem is currently un-maintained. If you would like to help keep it current or take ownership, please contact me @zethussuen
+
 epic-editor-rails v0.2.4
 =================
 Gemfile: ```gem 'epic-editor-rails'```  
